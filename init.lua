@@ -141,7 +141,7 @@ minetest.register_chatcommand("/save", {
 
 		--local path = minetest.get_worldpath() .. "/schems"
 		local path = minetest.get_worldpath()
-		local filename = path .. "/" .. param .. ".txt"
+		local filename = path .. "/" .. param .. ".lua"
 		--os.execute("mkdir \"" .. path .. "\"") --create directory if it does not already exist
 		local file, err = io.open(filename, "w")
 		if err ~= nil then
