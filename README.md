@@ -8,20 +8,23 @@ local n2 = { name = "default:river_water_source" }
 local n3 = { name = "default:river_water_flowing", param2 = 7 }
 ...
 
-local schem = {
+return {
 	yslice_prob = {
 
 	},
 	size = {
-		y = 14,
-		x = 15,
-		z = 11
+		y = 3,
+		x = 7,
+		z = 7
 	}
 	,
 	data = {
-		n1, n1, n1, n1, n1, n1, n2, n2, n2, n2, n2, n2, n2, n2, n2, n3, n3, 
-		n4, n4, n4, n4, n4, n5, n5, n5, n5, n5, n5, n5, n5, n5, n5, n5, n5, 
-		n5, n5, n5, n5, n5, n5, n5, n5, n5, n5, n5, n5, n5, n5, n5, n5, n5, 
+		-- z=-6, y=-2
+		n1, n1, n1, n1, n1, n1, n1, 
+		-- z=-6, y=-1
+		n2, n2, n2, n2, n2, n2, n2, 
+		-- z=-6, y=0
+		n2, n2, n2, n2, n2, n2, n2, 
 		...
 	}
 }
