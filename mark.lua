@@ -9,7 +9,7 @@ schematic_save.mark_pos1 = function(name)
 		schematic_save.marker1[name] = nil
 	end
 	if pos ~= nil then --add marker
-		schematic_save.marker1[name] = minetest.env:add_entity(pos, "schematic_save:pos1")
+		schematic_save.marker1[name] = minetest.add_entity(pos, "schematic_save:pos1")
 		schematic_save.marker1[name]:get_luaentity().active = true
 	end
 end
@@ -22,7 +22,7 @@ schematic_save.mark_pos2 = function(name)
 		schematic_save.marker2[name] = nil
 	end
 	if pos ~= nil then --add marker
-		schematic_save.marker2[name] = minetest.env:add_entity(pos, "schematic_save:pos2")
+		schematic_save.marker2[name] = minetest.add_entity(pos, "schematic_save:pos2")
 		schematic_save.marker2[name]:get_luaentity().active = true
 	end
 end
